@@ -45,13 +45,9 @@
 
     </style>
     
-    <title>yannis lastname</title>
+    <title>Yannis Karageorgiou</title>
 </head>
 <body class="bg-dark text-light">
-    <script>
-        var title = document.querySelector("title");
-        document.querySelector("head").innerHTML += '<link rel="shortcut icon" href="/style/favicons/'+String(title.innerText.split("")[0]).toLocaleLowerCase()+'.ico" type="image/x-icon">'
-    </script>
     <style>
         *{
             font-family: 'comforta';
@@ -60,7 +56,7 @@
             cursor: pointer;
         }
         #yannis{
-            background-image: url("/style/default.png");
+            background-image: url("/style/yannis.png");
             background-position: center center;
             background-size: cover;
         }
@@ -71,33 +67,38 @@
             <!-- side one -->
             <div>
                 <div id="yannis" class="bg-white" style="border-radius: 100%;width: 18rem; height: 18rem;"></div>
-                <h1 class="mt-2">Yannis Lastname</h1>
+                <h1 class="mt-2">Yannis Karageorgiou</h1>
             </div>
 
             <!-- side two -->
             <div class="m-5 mx-4 d-flex flex-column flex-wrap justify-content-evenly align-items-center">
                 <div>
                     <p style="width: 18rem;text-align: center;">
-                        I am Yannis, a student at the University of Prince Edward Island and currently working at Walmart. I have developed skills in customer service, teamwork, organization, and problem-solving. I am confident that my positive attitude and willingness to learn, combined with my skills and experiences, make me an excellent fit for any role in your company.
+                        I am Yannis, a student at the University of Prince Edward Island and currently working at Walmart. I have developed skills in customer service, teamwork, organization, and problem-solving.
                     </p>
                 </div>
                 <div class="container-fluid d-flex justify-content-evenly align-items-center">
-                    <div class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
-                        <i class="pe-1 bi bi-link"></i>
-                        Resume
+                    <div onclick="go('https\:\/\/www.instagram.com/Datboi_yanz/')" class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
+                        <i class="pe-1 bi bi-instagram"></i>
+                        Instagram
                     </div>
-                    <div class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
-                        <i class="pe-1 bi bi-linkedin"></i>
-                        linkedin
+                    <div onclick="go('tel:+902916-9436')" class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
+                        <i class="pe-1 bi bi-telephone"></i>
+                        Phone
                     </div>
-                    <div class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
+                    <div onclick="go('mailto:Giannisthegreat91@gmail.com')" class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
                         <i class="pe-1 bi bi-envelope"></i>
-                        Gmail
+                        Personal
+                    </div>
+                    <div onclick="go('mailto:Y0K01FJ.s03162@wal-mart.com')" class="cursor-pointer m-1 text-dark d-flex justify-content-between align-items-center bg-light px-3" style="border-radius: 20px;">
+                        <i class="pe-1 bi bi-envelope"></i>
+                        Work
                     </div>
                 </div>
             </div>
             
         </div>
     </div>
+    <script src="/script/all.js"></script>
 </body>
 </html>
