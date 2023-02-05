@@ -45,9 +45,13 @@
 
     </style>
     
-    <title>Mansoor Hussein</title>
+    <title>yannis lastname</title>
 </head>
 <body class="bg-dark text-light">
+    <script>
+        var title = document.querySelector("title");
+        document.querySelector("head").innerHTML += '<link rel="shortcut icon" href="/style/favicons/'+String(title.innerText.split("")[0]).toLocaleLowerCase()+'.ico" type="image/x-icon">'
+    </script>
     <style>
         *{
             font-family: 'comforta';
@@ -55,7 +59,7 @@
         .cursor-pointer{
             cursor: pointer;
         }
-        #mansoor{
+        #yannis{
             background-image: url("/style/default.png");
             background-position: center center;
             background-size: cover;
@@ -66,15 +70,15 @@
 
             <!-- side one -->
             <div>
-                <div id="mansoor" class="bg-white" style="border-radius: 100%;width: 18rem; height: 18rem;"></div>
-                <h1 class="mt-2">Mansoor Hussein</h1>
+                <div id="yannis" class="bg-white" style="border-radius: 100%;width: 18rem; height: 18rem;"></div>
+                <h1 class="mt-2">Yannis Lastname</h1>
             </div>
 
             <!-- side two -->
             <div class="m-5 mx-4 d-flex flex-column flex-wrap justify-content-evenly align-items-center">
                 <div>
                     <p style="width: 18rem;text-align: center;">
-                        I am Hussein Mansoor, a student at the University of Prince Edward Island and currently working at Walmart. I have developed skills in customer service, teamwork, organization, and problem-solving. I am confident that my positive attitude and willingness to learn, combined with my skills and experiences, make me an excellent fit for any role in your company.
+                        I am Yannis, a student at the University of Prince Edward Island and currently working at Walmart. I have developed skills in customer service, teamwork, organization, and problem-solving. I am confident that my positive attitude and willingness to learn, combined with my skills and experiences, make me an excellent fit for any role in your company.
                     </p>
                 </div>
                 <div class="container-fluid d-flex justify-content-evenly align-items-center">
@@ -95,9 +99,5 @@
             
         </div>
     </div>
-    <script>
-        var title = document.querySelector("title");
-        document.querySelector("head").innerHTML += '<link rel="shortcut icon" href="/style/favicons/'+String(title.innerText.split("")[0]).toLocaleLowerCase()+'.ico" type="image/x-icon">'
-    </script>
 </body>
 </html>
